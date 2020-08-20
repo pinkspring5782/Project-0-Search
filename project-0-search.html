@@ -2,11 +2,28 @@
 <html lang="en">
     <head>
         <title>Search</title>
+        <link rel="stylesheet" type="text/css" href="search-style.css">
+        <style>
+            #search {
+                position: absolute;
+                top: 320px;
+                left: 430px;
+                border: 1px solid;
+                border-color: white;
+                border-radius: 2px;
+                height: 35px;
+                width: 110px;
+                font-size: 11px;
+                padding: 8px;
+                font-weight: lighter;
+
+            }
+        </style>
     </head>
     <body>
         <form action="https://google.com/search">
-            <input type="text" name="q">
-            <input type="submit" value="Google Search">
+            <input class=box type="text" name="q">
+            <input type="submit" value="Google Search" id="search">
         </form>
     </body>
 </html>
