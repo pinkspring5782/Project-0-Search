@@ -6,8 +6,8 @@
         <style>
             #search {
                 position: absolute;
-                top: 320px;
-                left: 430px;
+                top: 310px;
+                left: 425px;
                 border: 1px solid;
                 border-color: white;
                 border-radius: 2px;
@@ -16,13 +16,12 @@
                 font-size: 11px;
                 padding: 8px;
                 font-weight: lighter;
-
             }
 
             #lucky {
                 position: absolute;
-                top: 320px;
-                left: 560px;
+                top: 310px;
+                left: 555px;
                 border: 1px solid;
                 border-color: white;
                 border-radius: 2px;
@@ -32,15 +31,33 @@
                 padding: 8px;
                 font-weight: lighter;
             }
+
+            #logo {
+                position: absolute;
+                top: 135px;
+                left: 400px;
+            }
+
+            a {
+                text-decoration: none;
+            }
+
+            a:hover {
+                text-decoration: underline;
+            }
         </style>
     </head>
     <body>
+        <img src="google.ping.png" alt="Google Logo" width="300" id="logo">
         <form action="https://google.com/search">
-            <input class=box type="text" name="q">
-            <input type="submit" value="Google Search" id="search">
+            <input class=box type="text" name="q" &nbsp>
+            <br>
+            <div>
+                <input type="submit" name="btnK" value="Google Search" id="search" >
+                <input type="submit" name="btnI" value="I'm Feeling Lucky" id="lucky">
+            </div>
         </form>
-        <form action="https://google.com/search?q=term&btnI">
-            <input type="submit" value="I'm Feeling Lucky" id="lucky">
-        </form>
+        <a href="image-search.html" class=right_button>Images</a>
+        <a href="advanced-search.html" class=left_button>Advanced Search</a>
     </body>
 </html>
