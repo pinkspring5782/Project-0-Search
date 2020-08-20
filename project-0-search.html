@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Search</title>
+        <title>Google</title>
         <link rel="stylesheet" type="text/css" href="search-style.css">
         <style>
             #search {
@@ -38,6 +38,14 @@
                 left: 400px;
             }
 
+            #mic {
+                position: absolute;
+                top: 252px;
+                left: 718px;
+                height: 35px;
+                width: 25px;
+            }
+
             a {
                 text-decoration: none;
             }
@@ -48,9 +56,10 @@
         </style>
     </head>
     <body>
+        <img src="mic.png" alt="Mic" id="mic">
         <img src="google.ping.png" alt="Google Logo" width="300" id="logo">
         <form action="https://google.com/search">
-            <input class=box type="text" name="q" &nbsp>
+            <input class=box type="text" name="q">
             <br>
             <div>
                 <input type="submit" name="btnK" value="Google Search" id="search" >

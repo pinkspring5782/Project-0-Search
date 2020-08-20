@@ -1,13 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Search</title>
+        <title>Google Images</title>
         <link rel="stylesheet" type="text/css" href="search-style.css">
+        <style>
+            p {
+                position: absolute;
+                color: blue;
+                left: 640px;
+                top: 195px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: lighter;
+            }
+
+            #logo {
+                position: absolute;
+                top: 135px;
+                left: 400px;
+            }
+
+            #glass {
+                position: absolute;
+                top: 252px;
+                left: 718px;
+                height: 35px;
+                width: 25px;
+            }
+
+            #mic {
+                position: absolute;
+                top: 252px;
+                left: 690px;
+                height: 33px;
+                width: 28px;
+            }
+
+            #camera {
+                position: absolute;
+                top: 252px;
+                left: 665px;
+                height: 33px;
+                width: 28px;
+            }
+            a {
+                text-decoration: none;
+            }
+
+            a:hover {
+                text-decoration: underline;
+            }
+        </style>
     </head>
     <body>
-        <form action="https://www.google.com/imghp?hl=en&tab=wi&authuser=0&ogbl">
-            <input type="text" name="q">
-            <input type="submit" value="Google Search">
+        <img src="google.ping.png" alt="Google Logo" width="300" id="logo">
+        <img src="mic.png" alt="Mic" id="mic">
+        <img src="camera.png" alt="Camera" id="camera">
+        <p>Images</p>
+        <form action="https://google.com/images">
+            <input class=box type="text" name="q">
+            <input type="image" src="blue_glass.png" value = "Google Search" id="glass">
         </form>
+        <a href="project-0-search.html" class=right_button>Home Page</a>
+        <a href="advanced-search.html" class=left_button>Advanced Search</a>
     </body>
 </html>
