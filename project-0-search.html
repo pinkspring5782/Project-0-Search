@@ -18,12 +18,29 @@
                 font-weight: lighter;
 
             }
+
+            #lucky {
+                position: absolute;
+                top: 320px;
+                left: 560px;
+                border: 1px solid;
+                border-color: white;
+                border-radius: 2px;
+                height: 35px;
+                width: 110px;
+                font-size: 11px;
+                padding: 8px;
+                font-weight: lighter;
+            }
         </style>
     </head>
     <body>
         <form action="https://google.com/search">
             <input class=box type="text" name="q">
             <input type="submit" value="Google Search" id="search">
+        </form>
+        <form action="https://google.com/search?q=term&btnI">
+            <input type="submit" value="I'm Feeling Lucky" id="lucky">
         </form>
     </body>
 </html>
