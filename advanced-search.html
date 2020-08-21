@@ -1,13 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Search</title>
+        <title>Google Advanced Search</title>
         <link rel="stylesheet" type="text/css" href="search-style.css">
+        <style>
+            div {border-top-color: gray;}
+            .advsearch {
+                width: 500px;
+                margin-left: 15px;
+            }
+
+            #top {
+                color: red;
+                font-size: 20px;
+                padding: 20px;
+            }
+
+            #logo {
+                margin: 10px;
+                border-top-color: gray;
+            }
+
+            #search {
+                background-color: blue;
+                color: white;
+                position: absolute;
+                left: 655px;
+                top: 410px;
+            }
+
+            #instruction {
+                color: gray;
+                position: absolute;
+                left: 640px;
+                top: 140px;
+            }
+        </style>
     </head>
-    <body>
-        <form action="https://www.google.com/advanced_search">
-            <input type="text" name="q">
-            <input type="submit" value="Google Search">
-        </form>
+    <body style="padding: 10px;">
+        <img src="google.ping.png" alt="Google Logo" width="100px" id="logo">
+        <div id="top">Advanced Search</div>
+        <p></p>Find pages with...
+        </p>
+        <p id="instruction">To do this in the search box
+        </p>
+        <form action="https://google.com/search">
+            all these words:<input class="advsearch" type="text" name="as_q" > Type the important words:  tricolor rat terrier
+           <br><br>this exact word or phrase:<input class="advsearch" type="text" name="as_epq" > Put exact words in quotes:  "rat terrier"
+           <br><br>any of these words:<input class="advsearch" type="text" name="as_oq" > Type OR between all the words you want:  miniature OR standard
+           <br><br>none of these words:<input class="advsearch" type="text" name="as_eq" > Put a minus sign just before words you don't want:  -rodent
+           <br><br>numbers ranging from:<input style="width: 120px;" type="text" name="as_nlo"> to <input style="width: 120px;" type="text" name="as_nhi"> Put 2 periods between the numbers and add a unit of measure: 10..35 lb, $300..$500, 2010..2011
+          <br><br> <input type="submit" value="Advanced Search" id="search">
+</form>
+        <a href="project-0-search.html" class=left_button>Home Page</a>
+        <a href="image-search.html" class=right_button>Images</a>
     </body>
 </html>
